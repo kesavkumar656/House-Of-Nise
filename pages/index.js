@@ -13,9 +13,12 @@ import MetaTags from "@/components/MetaTags";
 
 // STYLES //
 import styles from "@/styles/pages/Home.module.scss";
+import InnerBanner from "../src/components/InnerBanner";
+import HomeExploreRich from "../src/sections/HomeExploreRich";
+import HomeHero from "../src/sections/HomeHero";
 
 // IMAGES //
-
+import desktopImage from "@/../public/img/banner/Inner-banner.jpg";
 // DATA //
 
 /** Home Page */
@@ -30,10 +33,18 @@ export default function HomePage() {
 
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} bg_primary`}>
-				<h2>This is ting base next.js template</h2>
+				<InnerBanner
+					desktopImage={desktopImage}
+					bannerTitle={
+						"Unveil your deepest emotions and align with your highest frequency"
+					}
+					bannerDescription={"Exclusive Extrait de Parfum fragrances"}
+					mobileImage={desktopImage}
+				></InnerBanner>
+				<HomeHero></HomeHero>
+				<HomeExploreRich></HomeExploreRich>
 			</main>
 			{/* Page Content ends here */}
-
 			{/* Footer */}
 			<Footer />
 		</div>

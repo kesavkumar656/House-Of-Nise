@@ -19,27 +19,33 @@ function InnerBanner({
 	bannerTitle,
 	bannerDescription,
 	mobileImage,
+	color,
 }) {
 	return (
 		<div className={`${styles.inner_banner_wrap} `}>
-			{/* Banner Image */}
-			<div className={`${styles.banner_image} next_image`}>
-				<picture>
-					<source
-						srcSet={desktopImage ? desktopImage : DefaultBanner.src}
-						media="(min-width:767px)"
-					/>
-					<img
-						src={mobileImage ? mobileImage : DefaultBannerMob.src}
-						alt="mobileImage"
-					/>
-				</picture>
+			<div className={`${styles.banner_image} next_image next_cover_image`}>
+				{desktopImage && (
+					<picture>
+						<source srcSet={desktopImage.src} media="(min-width:767px)" />
+						<img src={mobileImage.src} alt="Banner" />
+					</picture>
+				)}
 			</div>
-			{/* Banner Content */}
+
 			<div className={`${styles.banner_content}`}>
 				<div className="container">
-					<h1>{bannerTitle}</h1>
-					<p>{bannerDescription}</p>
+					<h1
+						className={`${styles.title} ${color ? color : "color_white"} text_3xl`}
+					>
+						{bannerTitle}
+					</h1>
+					<p
+						className={`${styles.description} ${
+							color ? color : "color_white"
+						} text_3xl`}
+					>
+						{bannerDescription}
+					</p>
 				</div>
 			</div>
 		</div>

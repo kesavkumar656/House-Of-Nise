@@ -10,6 +10,7 @@
 
 // STYLES //
 import styles from "@/styles/sections/HomeHero.module.scss";
+import InnerBanner from "../components/InnerBanner";
 
 // IMAGES //
 
@@ -17,5 +18,9 @@ import styles from "@/styles/sections/HomeHero.module.scss";
 
 /** HomeHero Section */
 export default function HomeHero() {
-	return <div className={styles.hero_wrap}>Home Hero</div>;
+	return (
+		<div className={styles.hero_wrap}>
+		
+		</div>
+	);
 }
