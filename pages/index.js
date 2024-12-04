@@ -19,6 +19,8 @@ import HomeHero from "../src/sections/HomeHero";
 
 // IMAGES //
 import desktopImage from "@/../public/img/banner/Inner-banner.jpg";
+import HomeMemoirOfExperiences from "../src/sections/HomeMemoirOfExperiences";
+import HomeSignatureScent from "../src/sections/HomeSignatureScent";
 // DATA //
 
 /** Home Page */
@@ -30,19 +32,20 @@ export default function HomePage() {
 
 			{/* Header */}
 			<Header />
-
+			<InnerBanner
+				desktopImage={desktopImage}
+				bannerTitle={
+					"Unveil your deepest emotions and align with your highest frequency"
+				}
+				bannerDescription={"Exclusive Extrait de Parfum fragrances"}
+				mobileImage={desktopImage}
+			></InnerBanner>
 			{/* Page Content starts here */}
-			<main className={`${styles.HomePage} bg_primary`}>
-				<InnerBanner
-					desktopImage={desktopImage}
-					bannerTitle={
-						"Unveil your deepest emotions and align with your highest frequency"
-					}
-					bannerDescription={"Exclusive Extrait de Parfum fragrances"}
-					mobileImage={desktopImage}
-				></InnerBanner>
-				<HomeHero></HomeHero>
+			<main className={`${styles.HomePage} `}>
 				<HomeExploreRich></HomeExploreRich>
+				<HomeMemoirOfExperiences></HomeMemoirOfExperiences>
+				<HomeSignatureScent></HomeSignatureScent>
+				
 			</main>
 			{/* Page Content ends here */}
 			{/* Footer */}

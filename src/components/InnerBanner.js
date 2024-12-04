@@ -35,14 +35,16 @@ function InnerBanner({
 			<div className={`${styles.banner_content}`}>
 				<div className="container">
 					<h1
-						className={`${styles.title} ${color ? color : "color_white"} text_3xl`}
+						className={`${styles.title} ${
+							color ? color : "col-xs-6 color_white"
+						} text_3xl font_primary `}
 					>
 						{bannerTitle}
 					</h1>
 					<p
 						className={`${styles.description} ${
 							color ? color : "color_white"
-						} text_3xl`}
+						} col-xs-10 text_reg font_secondary`}
 					>
 						{bannerDescription}
 					</p>

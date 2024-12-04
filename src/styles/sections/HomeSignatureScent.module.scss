@@ -1,0 +1,16 @@
+@import "../helpers/helpers.scss";
+
+.HomeSignatureScent {
+	.wrapper {
+		@extend %f_r_aj_center;
+		.textDiv {
+			p {
+				padding-top: 2%;
+                padding-bottom: 8%;
+			}
+		}
+		.imageDiv {
+            
+		}
+	}
+}

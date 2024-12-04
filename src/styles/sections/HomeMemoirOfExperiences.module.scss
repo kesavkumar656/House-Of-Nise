@@ -1,0 +1,25 @@
+@import "../helpers/helpers.scss";
+
+.HomeMemoirOfExperiences {
+	.wrapper {
+		@extend %d_flex;
+		padding-left: var(--container_left_space);
+		.textDiv {
+			p {
+				padding: 4% 0 10% 0;
+			}
+		}
+	}
+	.MarqueeWrapper {
+		background-color: var(--color_black);
+		color: var(--color_white);
+		.MarqueeDiv {
+			@extend %f_r_a_center;
+
+			.marqueeContainer {
+				@extend %f_r_a_center;
+				gap: 20px;
+			}
+		}
+	}
+}

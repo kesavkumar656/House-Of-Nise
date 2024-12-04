@@ -1,11 +1,16 @@
 @font-face {
-	font-family: "PlayfairDisplay";
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 400;
 	font-display: swap;
-	src: url()
+	src: url("/font/PlayfairDisplay/PlayfairDisplay-Regular.ttf")
 		format("truetype");
 }
+
 @font-face {
-	font-family: "NunitoSans";
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
 	font-display: swap;
-	src: url(../fonts/Nunito-Sans/NunitoSans-Regular.ttf) format("truetype");
+	src: url("/font/Nunito-sans/NunitoSans-Regular.ttf") format("truetype");
 }

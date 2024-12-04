@@ -16,6 +16,7 @@ import styles from "@/styles/components/Header.module.scss";
 
 // IMAGES //
 import Arrow from "@/../public/img/icons/arrow.svg";
+import Logo from "@/../public/img/logo.png";
 
 // DATA //
 
@@ -47,8 +48,8 @@ export default function Header() {
 					{/* Logo wrap */}
 					<Link href="/">
 						<div className={styles.image_wrap}>
-							{/* <Image src={Logo} alt="Logo" /> */}
-							LOGO
+							<Image src={Logo} alt="Logo" />
+						
 						</div>
 					</Link>
 
