@@ -1,0 +1,11 @@
+@import "../helpers/helpers.scss";
+
+.BlogCard {
+	.textDiv {
+		.readMore {
+			@extend %f_r_a_center;
+			.arrow {
+			}
+		}
+	}
+}

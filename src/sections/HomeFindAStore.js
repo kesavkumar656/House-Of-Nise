@@ -105,6 +105,7 @@ export default function HomeFindAStore() {
 				</Marquee>
 			</div>
 			<div className="container">
+				<h1 className="text_2xl text_400 font_primary ">Find a store near you</h1>
 				<div className={styles.wrapper}>
 					<div className={`${styles.ImageDiv} col-xs-6`}>
 						<Image src={shelf} alt=""></Image>

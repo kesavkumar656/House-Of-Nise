@@ -11,6 +11,7 @@
 		}
 	}
 	.banner_content {
-		
+		@extend %rel_xy_center;
+		top: 60%;
 	}
 }

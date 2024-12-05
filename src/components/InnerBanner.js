@@ -1,6 +1,7 @@
 // MODULES //
 
 // COMPONENTS //
+import Button from "../components/Buttons/Button";
 
 // STYLES //
 import styles from "@/styles/components/InnerBanner.module.scss";
@@ -48,6 +49,7 @@ function InnerBanner({
 					>
 						{bannerDescription}
 					</p>
+					<Button variant="filled" color="primary">Our fragrances</Button>
 				</div>
 			</div>
 		</div>

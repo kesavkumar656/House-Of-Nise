@@ -1,0 +1,13 @@
+@import "../helpers/helpers.scss";
+
+.HomeFeaturedBlogs {
+	.wrapper {
+		@extend %f_c_a_center;
+        gap: 20px;
+		.blogWrapper {
+			margin-top: 2%;
+			@extend %d_flex;
+			gap: 20px;
+		}
+	}
+}
