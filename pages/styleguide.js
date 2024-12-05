@@ -24,7 +24,6 @@ import styles from "@/styles/components/Styleguide.module.scss";
 
 // DATA //
 import accordianData from "@/data/accordianData.json";
-
 /** Styleguide Page */
 const StyleGuide = () => {
 	const colors = ["primary", "secondary"];

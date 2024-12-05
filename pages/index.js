@@ -21,6 +21,7 @@ import HomeHero from "../src/sections/HomeHero";
 import desktopImage from "@/../public/img/banner/Inner-banner.jpg";
 import HomeMemoirOfExperiences from "../src/sections/HomeMemoirOfExperiences";
 import HomeSignatureScent from "../src/sections/HomeSignatureScent";
+import HomeFindAStore from "../src/sections/HomeFindAStore";
 // DATA //
 
 /** Home Page */
@@ -45,7 +46,7 @@ export default function HomePage() {
 				<HomeExploreRich></HomeExploreRich>
 				<HomeMemoirOfExperiences></HomeMemoirOfExperiences>
 				<HomeSignatureScent></HomeSignatureScent>
-				
+				<HomeFindAStore></HomeFindAStore>
 			</main>
 			{/* Page Content ends here */}
 			{/* Footer */}

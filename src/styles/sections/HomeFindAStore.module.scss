@@ -1,0 +1,36 @@
+@import "../helpers/helpers.scss";
+
+.HomeFindAStore {
+	background-color: var(--color_primary_light);
+	.marqueeWrapper {
+		background-color: var(--color_black);
+		padding: 1% 0;
+		margin-bottom: 2%;
+		@extend %f_r_a_center;
+	}
+	.wrapper {
+		@extend %d_flex;
+		justify-content: space-between;
+		.ImageDiv {
+		}
+		.textDiv {
+			:global(.accordian_wrap) {
+				background-color: var(--color_primary);
+				margin: 1% 0;
+			}
+			.contentWrapper {
+				background-color: var(--color_white);
+				padding: 1%;
+				a .location {
+					padding: 1% 0;
+					.country {
+					}
+					.ShopName {
+					}
+					.address {
+					}
+				}
+			}
+		}
+	}
+}
