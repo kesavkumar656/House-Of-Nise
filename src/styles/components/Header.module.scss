@@ -12,6 +12,10 @@
 	.header_inside {
 		@extend %f_r_a_center;
 		justify-content: space-between;
+		.DashboardMenu {
+			@extend %f_r_a_center;
+			gap: 10px;
+		}
 		.image_wrap {
 			padding: 10px 0;
 			max-width: 120px;
@@ -22,6 +26,7 @@
 			align-self: stretch;
 			padding-inline-start: 0;
 			// The menu is transformed as per sidebar on click of hamburger icon
+
 			@include sm-down {
 				padding-top: 5%;
 				background-color: var(--color_white);

@@ -18,6 +18,9 @@ import styles from "@/styles/components/Header.module.scss";
 import Arrow from "@/../public/img/icons/arrow.svg";
 import Logo from "@/../public/img/logo.png";
 
+import cart from "@/../public/img/header/shopping_cart.png";
+import person from "@/../public/img/header/person.png";
+import search from "@/../public/img/header/search.png";
 // DATA //
 
 /** Header Component */
@@ -49,21 +52,20 @@ export default function Header() {
 					<Link href="/">
 						<div className={styles.image_wrap}>
 							<Image src={Logo} alt="Logo" />
-						
 						</div>
 					</Link>
 
 					{/* Links Wrap */}
-					<div className={`${styles.links_wrap}`}>
+					<div className={`${styles.links_wrap} text_sm font_primary text_400`}>
 						{/* Add "has_dropdown" class if your link has dropdown */}
 						<div
 							className={`${styles.links} ${styles.has_dropdown} ${
 								openDropdown === "aboutUs" ? styles.dropdown_opened : ""
-							} dropdown`}
+							} dropdown text_sm font_primary text_400`}
 							onClick={() => toggleDropdown("aboutUs")}
 						>
 							<div className={styles.link_title}>
-								<p>About Us</p>
+								<p>Collections</p>
 								<span className={styles.arrow_img}>
 									<Image src={Arrow} alt="Arrow" />
 								</span>
@@ -71,24 +73,21 @@ export default function Header() {
 							{/* Dropdown is opened when link is clicked */}
 							<div className={`${styles.dropdown_wrap}`}>
 								<Link href="">
-									<p className={styles.dropdown_links}>About 1</p>
+									<p className={styles.dropdown_links}>Collections 1</p>
 								</Link>
 								<Link href="">
-									<p className={styles.dropdown_links}>About 2</p>
-								</Link>
-								<Link href="">
-									<p className={styles.dropdown_links}>About 3</p>
+									<p className={styles.dropdown_links}>Collections 2</p>
 								</Link>
 							</div>
 						</div>
 						<div
 							className={`${styles.links} ${styles.has_dropdown} ${
 								openDropdown === "blogs" ? styles.dropdown_opened : ""
-							} dropdown`}
+							} dropdown text_sm font_primary text_400`}
 							onClick={() => toggleDropdown("blogs")}
 						>
 							<div className={styles.link_title}>
-								<p>Blogs</p>
+								<p>Gifting</p>
 								<span className={styles.arrow_img}>
 									<Image src={Arrow} alt="Arrow" />
 								</span>
@@ -96,28 +95,42 @@ export default function Header() {
 							{/* Dropdown is opened when link is clicked */}
 							<div className={`${styles.dropdown_wrap}`}>
 								<Link href="">
-									<p className={styles.dropdown_links}>Blog 1</p>
+									<p className={styles.dropdown_links}>Gifting 1</p>
 								</Link>
 								<Link href="">
-									<p className={styles.dropdown_links}>Blog 2</p>
+									<p className={styles.dropdown_links}>Gifting 2</p>
 								</Link>
 								<Link href="">
-									<p className={styles.dropdown_links}>Blog 3</p>
+									<p className={styles.dropdown_links}>Gifting 3</p>
 								</Link>
 							</div>
 						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Career</div>
+								<div className={styles.link_title}>Discovery</div>
 							</Link>
 						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Contact</div>
+								<div className={styles.link_title}>Find Your Scent</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>World of Nise</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Contact Us</div>
 							</Link>
 						</div>
 					</div>
-
+					<div className={`${styles.DashboardMenu} `}>
+						<Image src={search} alt="" className={styles.search}></Image>
+						<Image src={person} alt="" className={styles.profile}></Image>
+						<Image src={cart} alt="" className={styles.cart}></Image>
+					</div>
 					{/* Hamburger icon visible in mobile only */}
 					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
 						<span className={styles.hamburger_line}></span>
