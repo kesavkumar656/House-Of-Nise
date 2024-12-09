@@ -7,11 +7,17 @@
 		padding: 1% 0;
 		margin-bottom: 2%;
 		@extend %f_r_a_center;
+		@include sm-down {
+			margin-bottom: 10%;
+		}
 	}
 	.wrapper {
+		margin-top: 4%;
 		@extend %d_flex;
 		justify-content: space-between;
-		margin-top: 2%;
+		@include sm-down {
+			flex-direction: column;
+		}
 		.ImageDiv {
 		}
 		.textDiv {
@@ -20,17 +26,26 @@
 				margin: 1% 0;
 			}
 			.contentWrapper {
-				background-color: var(--color_white);
+				background-color: var(--color_primary_light);
 				padding: 1%;
 				.location {
 					padding: 1% 0;
+					border-bottom: 1px solid var(--color_primary);
+
 					.country {
 					}
 					.ShopName {
+						padding: 1% 0;
 					}
 					.address {
 					}
 				}
+			}
+			.btnDiv{
+				margin-top:5%; 
+				@extend %d_flex;
+				justify-content: right;
+				gap: 10px;
 			}
 		}
 	}

@@ -19,11 +19,13 @@ import HomeHero from "../src/sections/HomeHero";
 
 // IMAGES //
 import desktopImage from "@/../public/img/banner/Inner-banner.jpg";
+import mobileImage from "@/../public/img/banner/Mobilebanner.jpg";
 import HomeMemoirOfExperiences from "../src/sections/HomeMemoirOfExperiences";
 import HomeSignatureScent from "../src/sections/HomeSignatureScent";
 import HomeFindAStore from "../src/sections/HomeFindAStore";
 import HomeFeaturedBlogs from "../src/sections/HomeFeaturedBlogs";
 import HomeGetInTouch from "../src/sections/HomeGetInTouch";
+import HomeMostLoved from "../src/sections/HomeMostLoved";
 // DATA //
 
 /** Home Page */
@@ -41,12 +43,13 @@ export default function HomePage() {
 					"Unveil your deepest emotions and align with your highest frequency"
 				}
 				bannerDescription={"Exclusive Extrait de Parfum fragrances"}
-				mobileImage={desktopImage}
+				mobileImage={mobileImage}
 			></InnerBanner>
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} `}>
 				<HomeExploreRich />
 				<HomeMemoirOfExperiences />
+				<HomeMostLoved />
 				<HomeSignatureScent />
 				<HomeFindAStore />
 				<HomeFeaturedBlogs />

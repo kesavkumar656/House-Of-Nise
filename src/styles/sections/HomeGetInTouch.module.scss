@@ -2,21 +2,31 @@
 
 .HomeGetInTouch {
 	margin-top: var(--container_left_space);
-
+	
 	.wrapper {
 		margin: 0% auto;
-		padding: 5% 0;
+		// padding: 5% 0;
 		@extend %f_c_aj_center;
-		gap: 20px;
+		gap: 30px;
+		@include sm-down {
+			width: 100%;
+			gap: 20px;
+		}
 	}
 	.B_left {
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		@include sm-down {
+			width: 35%;
+		}
 	}
 	.B_right {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		@include sm-down {
+			width: 35%;
+		}
 	}
 }

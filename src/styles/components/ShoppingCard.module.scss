@@ -1,0 +1,18 @@
+@import "../helpers/helpers.scss";
+
+.Wrapper {
+	@extend %f_c_a_center;
+	gap: 10px;
+	margin: 10% 0;
+	.ImageDiv {
+	}
+	.ProductDetail {
+	}
+	.button{
+		width: 100%;
+		display: none;
+		@include sm-down{
+		display: block;
+		}
+	}
+}

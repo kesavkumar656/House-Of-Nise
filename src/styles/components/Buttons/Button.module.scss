@@ -22,12 +22,23 @@
 // Filled Button
 .btn_filled {
 	// Filled Primary Button
+	font-family: "Playfair Display";
+	font-size: 18px;
+	font-weight: 400;
 	&.btn_primary {
 		background-color: var(--color_primary);
-		color: var(--color_black);
+		color: var(--color_white);
 
 		&:hover {
-			background-color: var(--color_primary_light);
+			background-color: var(--color_black);
+		}
+	}
+	&.btn_button {
+		padding: 10px 15px;
+		background-color: var(--color_primary);
+
+		&:hover {
+			background-color: var(--color_black);
 		}
 	}
 
@@ -38,6 +49,17 @@
 
 		&:hover {
 			background-color: var(--color_secondary_light);
+		}
+	}
+	&.btn_black {
+		width: 100%;
+		background-color: var(--color_black);
+		color: var(--color_white);
+
+		&:hover {
+			background-color: var(--color_white);
+			color: var(--color_black);
+			border: 1px solid var(--color_black);
 		}
 	}
 
@@ -117,7 +139,8 @@
 	// Underlined Primary Button
 	&.btn_primary {
 		color: var(--color_primary);
-
+		font-weight: 500;
+		font-family: "Playfair Display";
 		&:after {
 			background-color: var(--color_primary);
 		}

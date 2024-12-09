@@ -1,0 +1,18 @@
+@import "../helpers/helpers.scss";
+
+.HomeMostLoved {
+	overflow: hidden;
+	padding-left: var(--container_left_space);
+
+	.para {
+		margin: 2% 0;
+	}
+	.shoppingCard {
+		@extend %f_r_a_center;
+		gap: 20px;
+	
+		.shoppingDiv {
+			padding: 5% 0;
+		}
+	}
+}

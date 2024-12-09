@@ -23,34 +23,36 @@ import Logo from "public/img/logo-White.png";
 export default function Footer() {
 	return (
 		<footer className={`${styles.main_footer} bg_black `}>
-			<div className={styles.nav}>
-				<div className={styles.logo}>
-					<Image src={Logo} alt=""></Image>
+			<div className="container">
+				<div className={styles.nav}>
+					<div className={styles.logo}>
+						<Image src={Logo} alt=""></Image>
+					</div>
+					<div
+						className={`${styles.Links} text_xs text_400 font_primary col-xs-12 color_white`}
+					>
+						<a>Collections</a>
+						<a>Gifting</a>
+						<a>Discovery</a>
+						<a>Find Your Scent</a>
+						<a>World of Nise</a>
+						<a>Contact</a>
+					</div>
 				</div>
-				<div
-					className={`${styles.Links} text_xs text_500 font_primary col-xs-6 color_white`}
-				>
-					<a>Collections</a>
-					<a>Gifting</a>
-					<a>Discovery</a>
-					<a>Find Your Scent</a>
-					<a>World of Nise</a>
-					<a>Contact</a>
-				</div>
-			</div>
-			<div className={`${styles.footer_wrapper} col-xs-9`}>
-				<div>
-					<p className="color_white font_secondary text_sm text_400">
-						© {new Date().getFullYear()} Copyright
-					</p>
-				</div>
-				<div className={styles.social}>
-					<Image width={36} height={36} src={fb} alt=""></Image>
-					<Image width={36} height={36} src={insta} alt=""></Image>
-					<Image width={36} height={36} src={tiktok} alt=""></Image>
-				</div>
-				<div>
-					<Image src={madebyTing} alt=""></Image>
+				<div className={`${styles.footer_wrapper} `}>
+					<div>
+						<p className="color_white font_secondary text_sm text_400">
+							Copyright © {new Date().getFullYear()} House of Nisé
+						</p>
+					</div>
+					<div className={styles.social}>
+						<Image className={styles.logo} width={36} height={36} src={fb} alt=""></Image>
+						<Image className={styles.logo} width={36} height={36} src={insta} alt=""></Image>
+						<Image className={styles.logo} width={36} height={36} src={tiktok} alt=""></Image>
+					</div>
+					<div>
+						<Image src={madebyTing} alt=""></Image>
+					</div>
 				</div>
 			</div>
 		</footer>

@@ -28,10 +28,10 @@ export default function HomeMemoirOfExperiences() {
 			<div className="section_spacing">
 				<div className="">
 					<div className={styles.wrapper}>
-						<div className={`${styles.textDiv} col-xs-9 `}>
-							<h1 className=" font_primary text_3xl  color_black">
+						<div className={`${styles.textDiv} col-xs-12 `}>
+							<h1 className=" font_primary text_3xl  color_primary">
 								A memoir of experiences, waiting to
-								<span className="color_primary"> unfold</span>
+								<span className="color_black"> unfold</span>
 							</h1>
 							<p className=" font_secondary text_reg ">
 								Each note is a distinct memory, lingering like footsteps across distant
@@ -39,9 +39,11 @@ export default function HomeMemoirOfExperiences() {
 								scent takes you to a new experience of the world, enveloping you in
 								boundless discovery.
 							</p>
-							<Button color="primary" variant="filled">
-								World Of Nise
-							</Button>
+							<div className={`${styles.Button}`}>
+								<Button color="primary" shape="squared" variant="filled">
+									World Of Nise
+								</Button>
+							</div>
 						</div>
 
 						<div className="">

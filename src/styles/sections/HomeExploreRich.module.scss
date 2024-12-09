@@ -1,14 +1,25 @@
 @import "../helpers/helpers.scss";
 
 .HomeExploreRich {
+	padding-left: var(--container_left_space);
+	margin-bottom: 8%;
 	.wrapper {
 		@extend %f_r_a_center;
-        justify-content: space-between;
+		justify-content: space-between;
+		@include sm-down {
+			flex-direction: column;
+		}
 		.textDiv {
 			width: 40%;
+			@include sm-down {
+				width: 90%;
+			}
+			.heading {
+				margin-bottom: 4%;
+				width: 80%;
+			}
 		}
 		.imageDiv {
-			width: 40%;
 		}
 	}
 }

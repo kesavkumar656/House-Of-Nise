@@ -15,6 +15,22 @@
 		.DashboardMenu {
 			@extend %f_r_a_center;
 			gap: 10px;
+			.cart {
+				@include sm-down {
+					display: none;
+				}
+			}
+			.profile {
+				@include sm-down {
+					display: none;
+				}
+			}
+			.search {
+			}
+		}
+		.DashboardMobile {
+			display: flex;
+			gap: 20px;
 		}
 		.image_wrap {
 			padding: 10px 0;

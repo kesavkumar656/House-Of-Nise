@@ -22,13 +22,13 @@ export default function HomeGetInTouch() {
 	return (
 		<section className={styles.HomeGetInTouch}>
 			<div className="container">
-				<div className={styles.wrapper}>
-					<h1 className="text_2xl font_primary">Get in touch</h1>
-					<p className="col-xs-7 text_center">
+				<div className={`${styles.wrapper} section_spacing col-xs-8`}>
+					<h1 className="text_4xl font_primary">Get in touch</h1>
+					<p className="col-xs1-11 text_center text_400">
 						We welcome your inquiries and collaboration opportunities to elevate our
 						fragrance journey together.
 					</p>
-					<Button variant="filled" color="primary">
+					<Button variant="filled" shape="squared" color="primary">
 						Lets connect
 					</Button>
 				</div>

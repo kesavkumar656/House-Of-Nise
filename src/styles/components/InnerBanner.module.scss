@@ -13,5 +13,11 @@
 	.banner_content {
 		@extend %rel_xy_center;
 		top: 60%;
+		@include sm-down {
+			top: 70%;
+		}
+		.description {
+			margin: 2% 0;
+		}
 	}
 }

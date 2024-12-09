@@ -1,6 +1,7 @@
 // MODULES //
 
 // COMPONENTS //
+import Button from "@/components/Buttons/Button";
 
 // SECTIONS //
 
@@ -16,12 +17,14 @@ import {
 	AccordionItem,
 	AccordionTitle,
 } from "../components/Accordian";
-import { title } from "process";
 
 // IMAGES //
 import shelf from "public/img/HomeFindAStore/shelf.png";
 import Vogue from "public/img/HomeFindAStore/Vogue.png";
+import L_arrow from "public/img/HomeFindAStore/L_Arrow.png";
+import R_arrow from "public/img/HomeFindAStore/R_Arrow.png";
 import Marquee from "react-fast-marquee";
+
 // DATA //
 
 /** HomeFindAStore Section */
@@ -105,12 +108,14 @@ export default function HomeFindAStore() {
 				</Marquee>
 			</div>
 			<div className="container">
-				<h1 className="text_2xl text_400 font_primary ">Find a store near you</h1>
+				<h1 className="col-xs-12 text_2xl text_400 font_primary ">
+					Find a store near you
+				</h1>
 				<div className={styles.wrapper}>
-					<div className={`${styles.ImageDiv} col-xs-6`}>
+					<div className={`${styles.ImageDiv} col-xs-12`}>
 						<Image src={shelf} alt=""></Image>
 					</div>
-					<div className={`${styles.textDiv} col-xs-6 `}>
+					<div className={`${styles.textDiv} col-xs-12`}>
 						<Accordion>
 							{/* Accordian Items using json */}
 							{NetherlandsData.map((data, index) => (
@@ -157,6 +162,14 @@ export default function HomeFindAStore() {
 								</AccordionContent>
 							</AccordionItem> */}
 						</Accordion>
+						<div className={styles.btnDiv}>
+							<Button color="button" variant="filled" shape="rounded">
+								<Image src={L_arrow} alt=""></Image>
+							</Button>
+							<Button color="button" variant="filled" shape="rounded">
+								<Image src={R_arrow} alt=""></Image>
+							</Button>
+						</div>
 					</div>
 				</div>
 			</div>

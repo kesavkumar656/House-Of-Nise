@@ -126,16 +126,24 @@ export default function Header() {
 							</Link>
 						</div>
 					</div>
-					<div className={`${styles.DashboardMenu} `}>
-						<Image src={search} alt="" className={styles.search}></Image>
-						<Image src={person} alt="" className={styles.profile}></Image>
-						<Image src={cart} alt="" className={styles.cart}></Image>
-					</div>
-					{/* Hamburger icon visible in mobile only */}
-					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
-						<span className={styles.hamburger_line}></span>
-						<span className={styles.hamburger_line}></span>
-						<span className={styles.hamburger_line}></span>
+					<div className={styles.DashboardMobile}>
+						<div className={`${styles.DashboardMenu} `}>
+							<div className={styles.search}>
+								<Image src={search} alt="" className={styles.search}></Image>
+							</div>
+							<div className={styles.profile}>
+								<Image src={person} alt="" className={styles.profile}></Image>
+							</div>
+							<div className={styles.cart}>
+								<Image src={cart} alt="" className={styles.cart}></Image>
+							</div>
+						</div>
+						{/* Hamburger icon visible in mobile only */}
+						<div className={styles.hamburger_icon} onClick={toggleSidebar}>
+							<span className={styles.hamburger_line}></span>
+							<span className={styles.hamburger_line}></span>
+							<span className={styles.hamburger_line}></span>
+						</div>
 					</div>
 				</div>
 			</div>

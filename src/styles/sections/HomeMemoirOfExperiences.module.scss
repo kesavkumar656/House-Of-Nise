@@ -3,22 +3,38 @@
 .HomeMemoirOfExperiences {
 	.wrapper {
 		@extend %d_flex;
+		align-items: flex-end;
 		padding-left: var(--container_left_space);
+		@include sm-down {
+			flex-direction: column;
+		}
 		.textDiv {
 			p {
-				padding: 4% 0 10% 0;
+				padding: 2%  0;
+				@include sm-down{
+					padding: 4% 0;
+				}
+			}
+			.Button{
+				margin-bottom: 8%;
+				margin-top: 2%;
 			}
 		}
 	}
 	.MarqueeWrapper {
 		background-color: var(--color_black);
 		color: var(--color_white);
+		@include sm-up {
+		
+		}
+
 		.MarqueeDiv {
 			@extend %f_r_a_center;
-
+			gap: 20px;
 			.marqueeContainer {
 				@extend %f_r_a_center;
 				gap: 20px;
+				padding: 0 20px;
 			}
 		}
 	}

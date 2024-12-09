@@ -18,20 +18,20 @@ import Collection from "public/img/HomeExploreRich/Collection.png";
 /** HomeExploreRich Section */
 export default function HomeExploreRich() {
 	return (
-		<section className={styles.HomeExploreRich}>
-			<div className="container">
+		<section className={`${styles.HomeExploreRich} `}>
+			<div className="">
 				<div className={styles.wrapper}>
-					<div className={styles.textDiv}>
-						<div className={`${styles.heading} col-xs-12 text_2xl font_primary`}>
+					<div className={`${styles.textDiv} section_spacing `}>
+						<div className={`${styles.heading}  text_2xl font_primary`}>
 							Explore a rich assortment of stories
 						</div>
-						<p className="col-xs-11 font_secondary">
+						<p>
 							Dive into a treasure trove of fragrances, inspired by explorative
 							journeys – out in the world and within. Through Dutch perfumery at its
 							finest, in a curated collection.
 						</p>
 					</div>
-					<div className={styles.imageDiv}>
+					<div className={`${styles.imageDiv} `}>
 						<Image src={Collection} alt=""></Image>
 					</div>
 				</div>
