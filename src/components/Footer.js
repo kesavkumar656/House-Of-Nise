@@ -21,6 +21,7 @@ import Logo from "@/../public/img/logo-White.png";
 
 /** Footer Component */
 export default function Footer() {
+	// .
 	return (
 		<footer className={`${styles.main_footer} bg_black `}>
 			<div className="container">
