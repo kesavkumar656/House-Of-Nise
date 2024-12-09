@@ -1,8 +1,14 @@
 // MODULES //
 
+import Marquee from "react-fast-marquee";
 // COMPONENTS //
 import Button from "@/components/Buttons/Button";
-
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTitle,
+} from "../components/Accordian";
 // SECTIONS //
 
 // PLUGINS //
@@ -11,19 +17,12 @@ import Image from "next/image";
 
 // STYLES //
 import styles from "@/styles/sections/HomeFindAStore.module.scss";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTitle,
-} from "../components/Accordian";
 
 // IMAGES //
-import shelf from "public/img/HomeFindAStore/shelf.png";
-import Vogue from "public/img/HomeFindAStore/Vogue.png";
-import L_arrow from "public/img/HomeFindAStore/L_Arrow.png";
-import R_arrow from "public/img/HomeFindAStore/R_Arrow.png";
-import Marquee from "react-fast-marquee";
+import shelf from "@/../public/img/HomeFindAStore/shelf.png";
+import Vogue from "@/../public/img/HomeFindAStore/Vogue.png";
+import L_arrow from "@/../public/img/HomeFindAStore/L_Arrow.png";
+import R_arrow from "@/../public/img/HomeFindAStore/R_Arrow.png";
 
 // DATA //
 

@@ -12,8 +12,8 @@ import Head from "next/head";
 // STYLES //
 
 // IMAGES //
-import OgImage from "public/img/og-image.jpg";
-import Favicon from "public/img/favicon.png";
+import OgImage from "@/../public/img/og-image.jpg";
+import Favicon from "@/../public/img/favicon.png";
 
 // DATA //
 

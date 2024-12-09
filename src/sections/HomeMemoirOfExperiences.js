@@ -14,10 +14,10 @@ import styles from "@/styles/sections/HomeMemoirOfExperiences.module.scss";
 import Button from "../components/Buttons/Button";
 
 // IMAGES //
-import building from "public/img/HomeMemoirOfExperiences/Buildings.png";
-import icon1 from "public/img/HomeMemoirOfExperiences/icon2.png";
-import icon2 from "public/img/HomeMemoirOfExperiences/icon3.png";
-import icon3 from "public/img/HomeMemoirOfExperiences/icon4.png";
+import building from "@/../public/img/HomeMemoirOfExperiences/Buildings.png";
+import icon1 from "@/../public/img/HomeMemoirOfExperiences/icon2.png";
+import icon2 from "@/../public/img/HomeMemoirOfExperiences/icon3.png";
+import icon3 from "@/../public/img/HomeMemoirOfExperiences/icon4.png";
 
 // DATA //
 

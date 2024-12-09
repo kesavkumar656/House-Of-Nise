@@ -10,8 +10,8 @@ import styles from "@/styles/sections/HomeMostLoved.module.scss";
 import ShoppingCard from "../components/ShoppingCard";
 
 // IMAGES //
-import product1 from "public/img/HomeMostLoved/perfume_product.jpg";
-import product2 from "public/img/HomeMostLoved/perfume_product2.jpg";
+import product1 from "@/../public/img/HomeMostLoved/perfume_product.jpg";
+import product2 from "@/../public/img/HomeMostLoved/perfume_product2.jpg";
 
 /** HomeMostLoved Section */
 export default function HomeMostLoved() {

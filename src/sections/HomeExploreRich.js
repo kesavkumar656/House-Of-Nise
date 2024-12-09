@@ -12,7 +12,7 @@ import Image from "next/image";
 import styles from "@/styles/sections/HomeExploreRich.module.scss";
 
 // IMAGES //
-import Collection from "public/img/HomeExploreRich/Collection.png";
+import Collection from "@/../public/img/HomeExploreRich/Collection.png";
 // DATA //
 
 /** HomeExploreRich Section */

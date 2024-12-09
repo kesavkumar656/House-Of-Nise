@@ -13,7 +13,7 @@ import Button from "../components/Buttons/Button";
 import styles from "@/styles/sections/HomeSignatureScent.module.scss";
 
 // IMAGES //
-import Flowers from "public/img/HomeSignatureScent/Flowers.png";
+import Flowers from "@/../public/img/HomeSignatureScent/Flowers.png";
 import Marquee from "react-fast-marquee";
 
 // DATA //

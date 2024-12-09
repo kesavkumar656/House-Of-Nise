@@ -1,5 +1,5 @@
 // MODULES //
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 // COMPONENTS //
 
@@ -13,15 +13,14 @@ import Image from "next/image";
 import styles from "@/styles/components/BlogCard.module.scss";
 
 // IMAGES //
-import Oud from "public/img/Component/Oud.jpg";
-import Arrow from "public/img/icons/arrow-right.svg";
+import Oud from "@/../public/img/Component/Oud.jpg";
+import Arrow from "@/../public/img/icons/arrow-right.svg";
 import Button from "./Buttons/Button";
 
 // DATA //
 
 /** BlogCard Component */
 export default function BlogCard({ date, heading }) {
-	
 	return (
 		<div className={styles.BlogCard}>
 			<Image src={Oud} alt=""></Image>

@@ -13,8 +13,8 @@ import styles from "@/styles/sections/HomeGetInTouch.module.scss";
 import Button from "../components/Buttons/Button";
 
 // IMAGES //
-import buildingLeft from "public/img/HomeGetInTouch/Buildings-left.png";
-import buildingRight from "public/img/HomeGetInTouch/Buildings-right.png";
+import buildingLeft from "@/../public/img/HomeGetInTouch/Buildings-left.png";
+import buildingRight from "@/../public/img/HomeGetInTouch/Buildings-right.png";
 // DATA //
 
 /** HomeGetInTouch Section */

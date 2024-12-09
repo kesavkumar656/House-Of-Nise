@@ -12,11 +12,11 @@ import Image from "next/image";
 import styles from "@/styles/components/Footer.module.scss";
 
 // IMAGES //
-import fb from "public/img/icons/social/fb.png";
-import insta from "public/img/icons/social/insta1.png";
-import tiktok from "public/img/icons/social/TikTok.png";
-import madebyTing from "public/img/icons/social/madebyTing.png";
-import Logo from "public/img/logo-White.png";
+import fb from "@/../public/img/icons/social/fb.png";
+import insta from "@/../public/img/icons/social/insta1.png";
+import tiktok from "@/../public/img/icons/social/TikTok.png";
+import madebyTing from "@/../public/img/icons/social/madebyTing.png";
+import Logo from "@/../public/img/logo-White.png";
 // DATA //
 
 /** Footer Component */
@@ -46,9 +46,27 @@ export default function Footer() {
 						</p>
 					</div>
 					<div className={styles.social}>
-						<Image className={styles.logo} width={36} height={36} src={fb} alt=""></Image>
-						<Image className={styles.logo} width={36} height={36} src={insta} alt=""></Image>
-						<Image className={styles.logo} width={36} height={36} src={tiktok} alt=""></Image>
+						<Image
+							className={styles.logo}
+							width={36}
+							height={36}
+							src={fb}
+							alt=""
+						></Image>
+						<Image
+							className={styles.logo}
+							width={36}
+							height={36}
+							src={insta}
+							alt=""
+						></Image>
+						<Image
+							className={styles.logo}
+							width={36}
+							height={36}
+							src={tiktok}
+							alt=""
+						></Image>
 					</div>
 					<div>
 						<Image src={madebyTing} alt=""></Image>
