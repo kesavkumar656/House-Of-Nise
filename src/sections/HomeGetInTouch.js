@@ -40,5 +40,6 @@ export default function HomeGetInTouch() {
 				<Image src={buildingRight} alt=""></Image>
 			</div>
 		</section>
+		// .
 	);
 }
