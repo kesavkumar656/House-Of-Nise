@@ -14,8 +14,8 @@ import styles from "@/styles/components/Footer.module.scss";
 // IMAGES //
 import fb from "@/../public/img/icons/social/fb.png";
 import insta from "@/../public/img/icons/social/insta1.png";
-import tiktok from "@/../public/img/icons/social/TikTok.png";
-import madebyTing from "@/../public/img/icons/social/madebyTing.png";
+import tiktok from "/img/icons/social/TikTok.png";
+import madebyTing from "/img/icons/social/madebyTing.png";
 import Logo from "@/../public/img/logo-White.png";
 // DATA //
 

@@ -20,7 +20,7 @@ import styles from "@/styles/sections/HomeFindAStore.module.scss";
 
 // IMAGES //
 import shelf from "@/../public/img/HomeFindAStore/shelf.png";
-import Vogue from "@/../public/img/HomeFindAStore/Vogue.png";
+import Vogue from "/img/HomeFindAStore/Vogue.png";
 import L_arrow from "@/../public/img/HomeFindAStore/L_Arrow.png";
 import R_arrow from "@/../public/img/HomeFindAStore/R_Arrow.png";
 
