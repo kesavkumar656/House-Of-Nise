@@ -17,6 +17,7 @@ import insta from "public/img/icons/social/insta1.png";
 import tiktok from "public/img/icons/social/TikTok.png";
 import madebyTing from "public/img/icons/social/madebyTing.png";
 import Logo from "public/img/logo-White.png";
+
 // DATA //
 
 /** Footer Component */
