@@ -69,11 +69,13 @@ export default function Footer() {
 							alt=""
 						></Image>
 					</div>
+					{/* //. */}
 					<div>
 						<Image src={madebyTing} alt=""></Image>
 					</div>
 				</div>
 			</div>
+		
 		</footer>
 	);
 }
