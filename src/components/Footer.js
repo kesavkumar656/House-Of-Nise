@@ -15,7 +15,7 @@ import styles from "@/styles/components/Footer.module.scss";
 import fb from "public/img/icons/social/fb.png";
 import insta from "public/img/icons/social/insta1.png";
 import tiktok from "public/img/icons/social/Tiktok.png";
-import madebyTing from "public/img/icons/social/madebyTing.png";
+import madebyTing from "public/img/icons/social/ting.png";
 import Logo from "public/img/logo-White.png";
 
 // DATA //
@@ -75,7 +75,6 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-		
 		</footer>
 	);
 }
