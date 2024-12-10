@@ -25,7 +25,7 @@ export default function ShoppingCard({ image, product, price }) {
 			</div>
 			<div className={styles.ProductDetail}>
 				<p className="text_center text_500 text_reg font_primary">{product}</p>
-				<p className="text_center text_500 text_reg font_primaryshs">{price}</p>
+				<p className="text_center text_500 text_reg font_primary">{price}</p>
 			</div>
 			<div className={`${styles.button}`}>
 				<Button

@@ -21,10 +21,12 @@
 		}
 		.imageDiv {
 			width: 50%;
+			@include sm-down {
+				width: var(--container);
+			}
 			.perfumeDiv {
 				height: 100%;
 				padding: 40% 0;
-				
 			}
 		}
 	}

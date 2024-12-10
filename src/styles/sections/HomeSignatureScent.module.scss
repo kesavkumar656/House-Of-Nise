@@ -10,6 +10,9 @@
 		.textDiv {
 			width: 40%;
 			margin: 5% 0;
+			@include sm-down {
+				width: var(--container);
+			}
 			p {
 				padding-top: 4%;
 				padding-bottom: 8%;
@@ -18,6 +21,9 @@
 		.ImageDiv {
 			margin: 5% 0;
 			width: 60%;
+			@include sm-down {
+				width: var(--container);
+			}
 		}
 	}
 }

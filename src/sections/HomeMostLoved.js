@@ -87,7 +87,7 @@ export default function HomeMostLoved() {
 							</SwiperSlide>
 						</Swiper>
 					) : (
-						<div className={`${styles.mobileDiv} container`}>
+						<div className={`${styles.mobileDiv}e`}>
 							<ShoppingCard
 								price="€ 10,00 – € 229,00"
 								product="One & Only Extrait de Parfum"
