@@ -31,7 +31,7 @@ export default function HomeExploreRich() {
 							finest, in a curated collection.
 						</p>
 					</div>
-					<div className={`${styles.imageDiv} `}>
+					<div className={`${styles.imageDiv} bg_primary`}>
 						<Image src={Collection} alt=""></Image>
 					</div>
 				</div>

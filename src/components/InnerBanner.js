@@ -38,7 +38,7 @@ function InnerBanner({
 					<h1
 						className={`${styles.title} ${
 							color ? color : "color_white"
-						} text_2xl font_primary  `}
+						} text_2xl  font_primary  `}
 					>
 						{bannerTitle}
 					</h1>

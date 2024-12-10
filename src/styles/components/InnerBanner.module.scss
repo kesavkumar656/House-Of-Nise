@@ -16,6 +16,12 @@
 		@include sm-down {
 			top: 70%;
 		}
+		.title {
+			width: 60%;
+			@include sm-down {
+				width: 100%;
+			}
+		}
 		.description {
 			margin: 2% 0;
 		}
