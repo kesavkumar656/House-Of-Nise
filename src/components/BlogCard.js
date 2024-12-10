@@ -26,7 +26,11 @@ export default function BlogCard({ date, heading }) {
 			<Image src={Oud} alt=""></Image>
 
 			<div className={styles.textDiv}>
-				<p className={`${styles.date} text_500 font_secondary text_xs`}>{date}</p>
+				<p
+					className={`${styles.date} text_500 font_secondary color_secondary text_xs`}
+				>
+					{date}
+				</p>
 				<h1 className={`${styles.heading} text_500 font_primary text_reg`}>
 					{heading}
 				</h1>

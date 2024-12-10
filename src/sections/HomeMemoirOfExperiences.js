@@ -28,7 +28,7 @@ export default function HomeMemoirOfExperiences() {
 			<div className="section_spacing">
 				<div className="">
 					<div className={styles.wrapper}>
-						<div className={`${styles.textDiv} col-xs-12 `}>
+						<div className={`${styles.textDiv}  `}>
 							<h1 className=" font_primary text_3xl  color_primary">
 								A memoir of experiences, waiting to
 								<span className="color_black"> unfold</span>
@@ -46,24 +46,30 @@ export default function HomeMemoirOfExperiences() {
 							</div>
 						</div>
 
-						<div className="">
-							<Image src={building} alt=""></Image>
-						</div>
+						<Image src={building} alt=""></Image>
 					</div>
 					<div className={styles.MarqueeWrapper}>
 						<Marquee>
 							<div className={styles.MarqueeDiv}>
 								<div className={styles.marqueeContainer}>
 									<Image src={icon1}></Image>
-									<p>High concentration of perfume oils</p>
+									<p className="col-xs-6">Long-lasting fragrance</p>
 								</div>
 								<div className={styles.marqueeContainer}>
 									<Image src={icon2}></Image>
-									<p>High concentration of perfume oils</p>
+									<p className="col-xs-6">Gender-neutral scents</p>
 								</div>
 								<div className={styles.marqueeContainer}>
 									<Image src={icon3}></Image>
-									<p>High concentration of perfume oils</p>
+									<p className="col-xs-8">High concentration of perfume oils</p>
+								</div>
+								<div className={styles.marqueeContainer}>
+									<Image src={icon3}></Image>
+									<p className="col-xs-8">High concentration of perfume oils</p>
+								</div>
+								<div className={styles.marqueeContainer}>
+									<Image src={icon3}></Image>
+									<p className="col-xs-6">Custom luxury boxes</p>
 								</div>
 							</div>
 						</Marquee>

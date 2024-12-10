@@ -9,23 +9,24 @@
 			flex-direction: column;
 		}
 		.textDiv {
+			width: 50%;
 			p {
-				padding: 2%  0;
-				@include sm-down{
+				padding: 2% 0;
+				@include sm-down {
 					padding: 4% 0;
 				}
 			}
-			.Button{
-				margin-bottom: 8%;
-				margin-top: 2%;
+			.Button {
+				margin-bottom: 10%;
+				margin-top: 3%;
 			}
 		}
 	}
 	.MarqueeWrapper {
+		padding: 1.5% 0;
 		background-color: var(--color_black);
 		color: var(--color_white);
 		@include sm-up {
-		
 		}
 
 		.MarqueeDiv {
@@ -35,6 +36,7 @@
 				@extend %f_r_a_center;
 				gap: 20px;
 				padding: 0 20px;
+				width: 30%;
 			}
 		}
 	}

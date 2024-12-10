@@ -1,5 +1,5 @@
-$colors: "primary", "primary_contrast", "secondary" ,"secondary_contrast",
-	"white", "primary_light" ,"black";
+$colors: "primary", "primary_contrast", "secondary", "secondary_contrast",
+	"white", "primary_light", "black", "secondary_tint","secondary_light";
 
 @each $color, $color_text in $colors {
 	// Classes for Background colors

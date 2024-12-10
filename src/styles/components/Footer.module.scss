@@ -4,22 +4,21 @@
 
 	.nav {
 		display: grid;
-		grid-template-columns: 200px 1fr; 
+		grid-template-columns: 200px 1fr;
 		align-items: center;
+		padding: 2% 0;
 
 		@include sm-down {
 			display: grid;
 			padding: 5%;
-			grid-gap: 10%;
 			gap: 10%;
-			grid-template: auto / repeat(1, 1fr); 
+			grid-template: auto / repeat(1, 1fr);
 			align-content: center;
-			justify-content: center;
+
 			justify-items: center;
 		}
 
 		.logo {
-		
 		}
 
 		.Links {
@@ -28,9 +27,9 @@
 			grid-template: auto / repeat(7, 1fr);
 			gap: 15px;
 			align-items: center;
-@include sm-down{
-	grid-template: auto / repeat(2, 1fr);
-}
+			@include sm-down {
+				grid-template: auto / repeat(2, 1fr);
+			}
 			a {
 				display: block;
 				margin: 5px 0;
@@ -39,18 +38,21 @@
 	}
 
 	.footer_wrapper {
-		margin: 0 auto;
-		border-top: 0.5px solid var(--color_white);
+		// margin: 0 auto;
+		border-top: 1px solid var(--color_secondary);
 		padding: 1% 0;
-		display: grid;
-		grid-template: auto / repeat(3, 1fr); 
-		justify-items: center;
-		align-items: center;
+		// display: grid;
+		// grid-template: auto / repeat(3, 1fr);
+		// justify-items: center;
+		// justify-content: space-between;
+		// align-items: center;
 
+		@extend %f_r_a_center;
+		justify-content: space-between;
 		@include sm-down {
+			// @extend %f_d_column;
+			flex-direction: column;
 			gap: 20px;
-			grid-template: auto / repeat(1, 1fr);
-			padding: 5%;
 		}
 
 		.social {

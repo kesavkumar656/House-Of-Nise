@@ -24,7 +24,7 @@ export default function HomeSignatureScent() {
 		<section className={`${styles.HomeSignatureScent} section_spacing`}>
 			<div className="container">
 				<div className={styles.wrapper}>
-					<div className={`${styles.textDiv} col-xs-12`}>
+					<div className={`${styles.textDiv} `}>
 						<h1 className="text_2xl font_primary text_400">
 							Discover your signature scent
 						</h1>
@@ -41,7 +41,7 @@ export default function HomeSignatureScent() {
 							Get my match
 						</Button>
 					</div>
-					<div className={`${styles.ImageDiv} col-xs-12`}>
+					<div className={`${styles.ImageDiv} `}>
 						<Image src={Flowers} alt=""></Image>
 					</div>
 				</div>

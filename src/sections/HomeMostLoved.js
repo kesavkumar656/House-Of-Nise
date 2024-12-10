@@ -1,6 +1,7 @@
 // MODULES //
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -31,15 +32,19 @@ export default function HomeMostLoved() {
 
 	return (
 		<section className={`${styles.HomeMostLoved}`}>
-			<div className="container">
+			<div className="container-fluid">
 				<h1 className="text_2xl text_400 font_primary">Our most loved</h1>
-				<p className={`${styles.para} text_sm text_400 font_primary`}>
+				<p className={`${styles.para} text_reg text_400 font_primary`}>
 					Explore our bestselling fragrances and pick a sensory voyage that suits you
 					best.
 				</p>
 				<div>
 					{!isMobile ? (
 						<Swiper
+							modules={[Pagination]}
+							pagination={{
+								type: "progressbar",
+							}}
 							spaceBetween={30}
 							slidesPerView={3}
 							simulateTouch={true}

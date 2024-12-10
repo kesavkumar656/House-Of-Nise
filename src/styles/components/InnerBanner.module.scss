@@ -11,19 +11,24 @@
 		}
 	}
 	.banner_content {
-		@extend %rel_xy_center;
-		top: 60%;
+		position: absolute;
+		bottom: 20%;
+		left: 10%;
 		@include sm-down {
-			top: 70%;
+			bottom: 10%;
+			left: 5%;
 		}
-		.title {
-			width: 60%;
-			@include sm-down {
-				width: 100%;
-			}
+	}
+	.title {
+		width: 60%;
+		@include sm-down {
+			width: 100%;
 		}
-		.description {
-			margin: 2% 0;
+	}
+	.description {
+		margin: 2% 0;
+		@include sm-down {
+			margin: 5% 0;
 		}
 	}
 }

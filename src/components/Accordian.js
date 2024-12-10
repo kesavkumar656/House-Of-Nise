@@ -4,38 +4,44 @@ import React, { useState } from "react";
 // COMPONENTS //
 import Image from "next/image";
 
-// SECTIONS //
-
-// PLUGINS //
-
 // STYLES //
 import styles from "@/styles/components/Accordian.module.scss";
 
 // IMAGES //
 import ArrowIcon from "@/../public/img/icons/acc_arrow.svg";
 
-/** Accordian  */
+/** Accordion */
 const Accordion = ({ children }) => {
-	return <div className="accordion">{children}</div>;
-};
+	const [activeIndex, setActiveIndex] = useState(null);
 
-/** Accordion Item  */
-const AccordionItem = ({ children }) => {
-	const [isOpen, setIsOpen] = useState(false);
-	/** Toggle Accordion  */
-	const toggleAccordion = () => {
-		setIsOpen(!isOpen);
+	/** Handle active accordion */
+	const handleAccordionToggle = (index) => {
+		setActiveIndex(activeIndex === index ? null : index); // Toggle active item
 	};
 
 	return (
+		<div className={styles.accordion}>
+			{React.Children.map(children, (child, index) =>
+				React.cloneElement(child, {
+					isOpen: activeIndex === index,
+					onToggle: () => handleAccordionToggle(index),
+				})
+			)}
+		</div>
+	);
+};
+
+/** Accordion Item */
+const AccordionItem = ({ children, isOpen, onToggle }) => {
+	return (
 		<div
-			className={`accordian_wrap ${styles.accordian_wrap} ${
-				isOpen && styles.active
+			className={`accordion_wrap ${styles.accordion_wrap} ${
+				isOpen ? styles.active : ""
 			}`}
 		>
 			{React.Children.map(children, (child) => {
 				if (child.type === AccordionTitle) {
-					return React.cloneElement(child, { isOpen, toggleAccordion });
+					return React.cloneElement(child, { isOpen, toggleAccordion: onToggle });
 				}
 				if (child.type === AccordionContent && isOpen) {
 					return child;
@@ -46,20 +52,25 @@ const AccordionItem = ({ children }) => {
 	);
 };
 
-/** Accordion Title  */
-const AccordionTitle = ({ children, isOpen, toggleAccordion }) => {
+/** Accordion Title */
+const AccordionTitle = ({ children, toggleAccordion, isOpen }) => {
 	return (
-		<div className={`${styles.accordian_title_wrap}`} onClick={toggleAccordion}>
+		<button
+			className={`${styles.accordion_title_wrap} `}
+			onClick={toggleAccordion}
+			aria-expanded={isOpen}
+		>
 			{children}
 			<div className={styles.arrow_icon}>
-				<Image src={ArrowIcon} width={30} height={27} alt="Accordian Arrow" />
+				<Image src={ArrowIcon} width={30} height={27} alt="Accordion Arrow" />
 			</div>
-		</div>
+		</button>
 	);
 };
-/** Accordion Content  */
+
+/** Accordion Content */
 const AccordionContent = ({ children }) => {
-	return <div className={`${styles.accordian_content_wrap}`}>{children}</div>;
+	return <div className={styles.accordion_content_wrap}>{children}</div>;
 };
 
 export { Accordion, AccordionItem, AccordionTitle, AccordionContent };

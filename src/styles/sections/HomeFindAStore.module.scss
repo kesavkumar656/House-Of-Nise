@@ -2,25 +2,39 @@
 
 .HomeFindAStore {
 	background-color: var(--color_primary_light);
-	.marqueeWrapper {
+
+	.MarqueeWrapper {
 		background-color: var(--color_black);
-		padding: 1% 0;
-		margin-bottom: 2%;
-		@extend %f_r_a_center;
-		@include sm-down {
-			margin-bottom: 10%;
+		color: var(--color_white);
+		margin-bottom: 6%;
+		padding: 1	% 0;
+		@include sm-up {
+		}
+
+		.MarqueeDiv {
+			@extend %f_r_a_center;
+			gap: 20px;
+			.marqueeContainer {
+				@extend %f_r_a_center;
+				gap: 20px;
+				padding: 0 20px;
+				width: 30%;
+			}
 		}
 	}
+
 	.wrapper {
-		margin-top: 4%;
+		padding: 3% 0;
 		@extend %d_flex;
 		justify-content: space-between;
 		@include sm-down {
 			flex-direction: column;
 		}
 		.ImageDiv {
+			width: 50%;
 		}
 		.textDiv {
+			width: 45%;
 			:global(.accordian_wrap) {
 				background-color: var(--color_primary);
 				margin: 1% 0;
@@ -41,8 +55,8 @@
 					}
 				}
 			}
-			.btnDiv{
-				margin-top:5%; 
+			.btnDiv {
+				margin-top: 5%;
 				@extend %d_flex;
 				justify-content: right;
 				gap: 10px;

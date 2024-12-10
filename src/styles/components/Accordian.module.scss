@@ -1,39 +1,43 @@
 @import "../helpers/helpers.scss";
 
-.accordian_wrap {
-	// Accordian Title
-	.accordian_title_wrap {
+.accordion_wrap {
+	padding: 1% 0;
+
+	.accordion_title_wrap {
 		cursor: pointer;
+		width: 100%;
+
 		@extend %f_r_a_center;
 		justify-content: space-between;
 		gap: 10px;
-		padding: 2% 1%;
+		padding: 3%;
+		background-color: var(--color_primary);
+		border: 1px solid var(--border-color);
 		transition: var(--transition);
+
 		.arrow_icon {
-			min-width: 20px;
-			max-width: 20px;
-			transition: var(--transition);
+			width: 20px;
+			transition: transform 0.3s ease;
 			@extend %f_r_a_center;
 			filter: brightness(100);
 		}
 	}
-	// Accordian Content
-	.accordian_content_wrap {
+
+	.accordion_content_wrap {
 		overflow: hidden;
 
-		transition: max-height 600ms ease;
+		max-height: 0;
+		transition: max-height 0.6s ease, padding 0.3s ease;
+		padding: 0;
 	}
 
-	// Active State
 	&.active {
-		.accordian_title_wrap {
-			.arrow_icon {
-				transform: rotate(180deg);
-			}
+		.accordion_content_wrap {
+			max-height: 500px; // Set a practical max height for animations
+			padding: 10px 15px;
 		}
-		.accordian_content_wrap {
-			transition: var(--transition);
-			max-height: 210vh;
+		.accordion_title_wrap .arrow_icon {
+			transform: rotate(180deg);
 		}
 	}
 }

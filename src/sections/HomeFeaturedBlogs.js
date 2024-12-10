@@ -35,7 +35,7 @@ export default function HomeFeaturedBlogs() {
 			<div className="container">
 				<h1 className="text_2xl text_500 font_primary">Featured blogs</h1>
 				<div className={styles.wrapper}>
-					<div className={`${styles.blogWrapper} col-xs-12`}>
+					<div className={`${styles.blogWrapper} `}>
 						{!isMobile ? (
 							// Swiper for larger screens
 							<Swiper

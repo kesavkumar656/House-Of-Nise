@@ -12,7 +12,9 @@ import Image from "next/image";
 import styles from "@/styles/sections/HomeExploreRich.module.scss";
 
 // IMAGES //
-import Collection from "@/../public/img/HomeExploreRich/Collection.png";
+import perfume1 from "@/../public/img/HomeExploreRich/perfume1.png";
+import perfume2 from "@/../public/img/HomeExploreRich/perfume2.png";
+import perfume3 from "@/../public/img/HomeExploreRich/perfume3.png";
 // DATA //
 
 /** HomeExploreRich Section */
@@ -22,7 +24,7 @@ export default function HomeExploreRich() {
 			<div className="">
 				<div className={styles.wrapper}>
 					<div className={`${styles.textDiv} section_spacing `}>
-						<div className={`${styles.heading}  text_2xl font_primary`}>
+						<div className={`${styles.heading}  text_2xl font_primary text_400`}>
 							Explore a rich assortment of stories
 						</div>
 						<p>
@@ -31,8 +33,16 @@ export default function HomeExploreRich() {
 							finest, in a curated collection.
 						</p>
 					</div>
-					<div className={`${styles.imageDiv} bg_primary`}>
-						<Image src={Collection} alt=""></Image>
+					<div className={`${styles.imageDiv} `}>
+						<div className={`${styles.perfumeDiv} bg_primary`}>
+							<Image src={perfume1} alt=""></Image>
+						</div>
+						{/* <div className={`${styles.perfumeDiv} bg_secondary_tint`}>
+							<Image src={perfume2} alt=""></Image>
+						</div>
+						<div className={`${styles.perfumeDiv} bg_secondary_light`}>
+							<Image src={perfume3} alt=""></Image>
+						</div> */}
 					</div>
 				</div>
 			</div>
