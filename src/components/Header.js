@@ -16,7 +16,7 @@ import styles from "@/styles/components/Header.module.scss";
 
 // IMAGES //
 import Arrow from "@/../public/img/icons/arrow.svg";
-import Logo from "@/../public/img/logo.png";
+import Logo from "@/../public/img/logo.svg";
 
 import cart from "@/../public/img/header/shopping_cart.png";
 import person from "@/../public/img/header/person.png";

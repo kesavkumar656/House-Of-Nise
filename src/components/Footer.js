@@ -16,7 +16,7 @@ import fb from "public/img/icons/social/fb.png";
 import insta from "public/img/icons/social/insta1.png";
 import tiktok from "public/img/icons/social/Tiktok.png";
 import madebyTing from "public/img/icons/social/ting.png";
-import Logo from "public/img/logo-White.png";
+import Logo from "public/img/logo-White.svg";
 
 // DATA //
 
@@ -70,7 +70,7 @@ export default function Footer() {
 						></Image>
 					</div>
 
-					<div className={styles.ting} >
+					<div className={styles.ting}>
 						<Image src={madebyTing} alt=""></Image>
 					</div>
 				</div>
