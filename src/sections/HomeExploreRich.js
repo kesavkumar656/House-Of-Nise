@@ -37,12 +37,12 @@ export default function HomeExploreRich() {
 						<div className={`${styles.perfumeDiv} bg_primary`}>
 							<Image src={perfume1} alt=""></Image>
 						</div>
-						{/* <div className={`${styles.perfumeDiv} bg_secondary_tint`}>
+						<div className={`${styles.perfumeDiv} bg_secondary_tint`}>
 							<Image src={perfume2} alt=""></Image>
 						</div>
 						<div className={`${styles.perfumeDiv} bg_secondary_light`}>
 							<Image src={perfume3} alt=""></Image>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>
