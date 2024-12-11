@@ -1,6 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .HomeExploreRich {
+	overflow: hidden;
 	padding-left: var(--container_left_space);
 	margin-bottom: 8%;
 	.wrapper {
@@ -20,13 +21,20 @@
 			}
 		}
 		.imageDiv {
-			// width: 50%;
+			width: 50%;
+			@extend %f_r_a_center;
 			@include sm-down {
 				width: var(--container);
 			}
+
 			.perfumeDiv {
-				height: 100%;
-				padding: 40% 0;
+				padding: 30% 0;
+			}
+			div:nth-child(2) {
+				width: 30%;
+			}
+			div:nth-child(3) {
+				width: 10%;
 			}
 		}
 	}

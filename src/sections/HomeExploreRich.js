@@ -23,7 +23,7 @@ export default function HomeExploreRich() {
 		<section className={`${styles.HomeExploreRich} `}>
 			<div className="">
 				<div className={styles.wrapper}>
-					<div className={`${styles.textDiv} section_spacing `}>
+					<div className={`${styles.textDiv}  `}>
 						<div className={`${styles.heading}  text_2xl font_primary text_400`}>
 							Explore a rich assortment of stories
 						</div>
@@ -36,12 +36,15 @@ export default function HomeExploreRich() {
 					<div className={`${styles.imageDiv} `}>
 						<div className={`${styles.perfumeDiv} bg_primary`}>
 							<Image src={perfume1} alt=""></Image>
+							<h1 className="">Collection</h1>
 						</div>
 						<div className={`${styles.perfumeDiv} bg_secondary_tint`}>
 							<Image src={perfume2} alt=""></Image>
+							<h1 className="">Thoughtful gifting</h1>
 						</div>
 						<div className={`${styles.perfumeDiv} bg_secondary_light`}>
 							<Image src={perfume3} alt=""></Image>
+							<h1 className="">Discover More</h1>
 						</div>
 					</div>
 				</div>
