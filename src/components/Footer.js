@@ -34,7 +34,7 @@ export default function Footer() {
 					>
 						<a href="">Collections</a>
 						<a href="">Gifting</a>
-						<a href="">Discovery</a>
+						<e href="">Discovery</e>
 						<a href="">Find Your Scent</a>
 						<a href="">World of Nise</a>
 						<a href="">Contact</a>

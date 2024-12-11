@@ -1,5 +1,6 @@
 // MODULES //
-
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 // COMPONENTS //
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -47,7 +48,7 @@ export default function HomePage() {
 			></InnerBanner>
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} `}>
-				<HomeExploreRich />
+				<HomeExploreRich gsap={gsap} />
 				<HomeMemoirOfExperiences />
 				<HomeMostLoved />
 				<HomeSignatureScent />
