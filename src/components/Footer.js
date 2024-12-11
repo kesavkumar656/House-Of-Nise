@@ -41,7 +41,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className={`${styles.footer_wrapper} `}>
-					<div>
+					<div className={styles.copyright}>
 						<p className="color_white font_secondary text_sm text_400">
 							Copyright © {new Date().getFullYear()} House of Nisé
 						</p>
@@ -62,7 +62,7 @@ export default function Footer() {
 							alt=""
 						></Image>
 						<Image
-							className={styles.logo}
+							className={`${styles.logo} `}
 							width={36}
 							height={36}
 							src={tiktok}
@@ -70,7 +70,7 @@ export default function Footer() {
 						></Image>
 					</div>
 
-					<div>
+					<div className={styles.ting} >
 						<Image src={madebyTing} alt=""></Image>
 					</div>
 				</div>

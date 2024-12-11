@@ -57,18 +57,29 @@
 			flex-direction: column;
 			gap: 20px;
 		}
-
+		.copyright {
+			@include sm-down {
+				order: 2;
+			}
+		}
 		.social {
 			padding: 1%;
 			@extend %f_r_a_center;
 			gap: 10px;
-
+			@include sm-down {
+				order: 1;
+			}
 			.logo {
 				padding: 2%;
 
 				&:hover {
 					scale: 1.1;
 				}
+			}
+		}
+		.ting {
+			@include sm-down {
+				order: 3;
 			}
 		}
 	}
