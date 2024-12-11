@@ -4,7 +4,7 @@
 
 	.nav {
 		display: grid;
-		grid-template-columns: 200px 1fr;
+		grid-template-columns: 300px 1fr;
 		align-items: center;
 
 		padding: 2% 0;
@@ -27,7 +27,6 @@
 			text-align: center;
 			display: grid;
 			grid-template: auto / repeat(7, 1fr);
-			gap: 15px;
 			align-items: center;
 			@include sm-down {
 				grid-template: auto / repeat(2, 1fr);
