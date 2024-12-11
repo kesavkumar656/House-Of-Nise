@@ -1,7 +1,8 @@
 // MODULES //
 import Image from "next/image";
+import { useRef } from "react";
 // COMPONENTS //
-
+import SliderArrow from "@/components/SliderArrow";
 // SECTIONS //
 
 // PLUGINS //
@@ -15,10 +16,12 @@ import styles from "@/styles/sections/HomeExploreRich.module.scss";
 import perfume1 from "@/../public/img/HomeExploreRich/perfume1.png";
 import perfume2 from "@/../public/img/HomeExploreRich/perfume2.png";
 import perfume3 from "@/../public/img/HomeExploreRich/perfume3.png";
+import SliderProgressAndArrow from "../components/SliderProgressAndArrow";
 // DATA //
 
 /** HomeExploreRich Section */
 export default function HomeExploreRich() {
+	const first = useRef(SliderArrow);
 	return (
 		<section className={`${styles.HomeExploreRich} `}>
 			<div className="">
@@ -37,6 +40,7 @@ export default function HomeExploreRich() {
 						<div className={`${styles.perfumeDiv} bg_primary`}>
 							<Image src={perfume1} alt=""></Image>
 							<h1 className="">Collection</h1>
+							<SliderArrow sliderRef={first}></SliderArrow>
 						</div>
 						<div className={`${styles.perfumeDiv} bg_secondary_tint`}>
 							<Image src={perfume2} alt=""></Image>
@@ -44,7 +48,9 @@ export default function HomeExploreRich() {
 						</div>
 						<div className={`${styles.perfumeDiv} bg_secondary_light`}>
 							<Image src={perfume3} alt=""></Image>
-							<h1 className="">Discover More</h1>
+							<div>
+								<h1 className="">Discover More</h1>
+							</div>
 						</div>
 					</div>
 				</div>

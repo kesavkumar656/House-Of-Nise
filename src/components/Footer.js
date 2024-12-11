@@ -32,12 +32,12 @@ export default function Footer() {
 					<div
 						className={`${styles.Links} text_xs text_400 font_primary  color_white`}
 					>
-						<a>Collections</a>
-						<a>Gifting</a>
-						<a>Discovery</a>
-						<a>Find Your Scent</a>
-						<a>World of Nise</a>
-						<a>Contact</a>
+						<a href="">Collections</a>
+						<a href="">Gifting</a>
+						<a href="">Discovery</a>
+						<a href="">Find Your Scent</a>
+						<a href="">World of Nise</a>
+						<a href="">Contact</a>
 					</div>
 				</div>
 				<div className={`${styles.footer_wrapper} `}>
