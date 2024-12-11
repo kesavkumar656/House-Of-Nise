@@ -30,7 +30,7 @@ export default function Footer() {
 						<Image src={Logo} alt=""></Image>
 					</div>
 					<div
-						className={`${styles.Links} text_xs text_400 font_primary col-xs-12 color_white`}
+						className={`${styles.Links} text_xs text_400 font_primary  color_white`}
 					>
 						<a>Collections</a>
 						<a>Gifting</a>
@@ -69,7 +69,7 @@ export default function Footer() {
 							alt=""
 						></Image>
 					</div>
-					
+
 					<div>
 						<Image src={madebyTing} alt=""></Image>
 					</div>

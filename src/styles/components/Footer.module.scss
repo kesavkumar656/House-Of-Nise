@@ -6,12 +6,14 @@
 		display: grid;
 		grid-template-columns: 200px 1fr;
 		align-items: center;
+
 		padding: 2% 0;
 
 		@include sm-down {
 			display: grid;
-			padding: 5%;
+			padding: 8% 5%;
 			gap: 10%;
+
 			grid-template: auto / repeat(1, 1fr);
 			align-content: center;
 
@@ -29,6 +31,7 @@
 			align-items: center;
 			@include sm-down {
 				grid-template: auto / repeat(2, 1fr);
+				text-align: left;
 			}
 			a {
 				display: block;
@@ -40,17 +43,18 @@
 	.footer_wrapper {
 		// margin: 0 auto;
 		border-top: 1px solid var(--color_secondary);
-		padding: 1% 0;
 		// display: grid;
 		// grid-template: auto / repeat(3, 1fr);
 		// justify-items: center;
 		// justify-content: space-between;
 		// align-items: center;
-
+		padding: 1% 0;
 		@extend %f_r_a_center;
 		justify-content: space-between;
 		@include sm-down {
 			// @extend %f_d_column;
+			padding: 10% 0;
+
 			flex-direction: column;
 			gap: 20px;
 		}
