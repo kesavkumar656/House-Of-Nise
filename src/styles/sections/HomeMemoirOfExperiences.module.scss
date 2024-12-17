@@ -26,8 +26,8 @@
 				margin-top: 3%;
 			}
 		}
-		.ImgDiv{
-			@include sm-down{
+		.ImgDiv {
+			@include sm-down {
 				margin-top: -50px;
 			}
 		}
@@ -47,6 +47,9 @@
 				gap: 8%;
 				padding: 0 20px;
 				width: 30%;
+				@include sm-down {
+					width: 20%;
+				}
 			}
 		}
 	}
