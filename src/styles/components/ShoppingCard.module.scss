@@ -4,6 +4,9 @@
 	@extend %f_c_a_center;
 	gap: 10px;
 	margin: 10% 0;
+	@include sm-down {
+		align-items: stretch;
+	}
 	.ImageDiv {
 		@extend %relative_box;
 		.fav_btn {

@@ -28,7 +28,7 @@ export default function HomeSignatureScent() {
 						<h1 className="text_2xl font_primary text_400">
 							Discover your signature scent
 						</h1>
-						<p className="font_secondary text_reg">
+						<p className="font_secondary text_reg color_secondary">
 							Every fragrance tells its own story; discover the scent that captures
 							yours.
 						</p>

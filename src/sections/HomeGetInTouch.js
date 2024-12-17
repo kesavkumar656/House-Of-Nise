@@ -24,7 +24,7 @@ export default function HomeGetInTouch() {
 			<div className="container">
 				<div className={`${styles.wrapper}  `}>
 					<h1 className="text_4xl font_primary">Get in touch</h1>
-					<p className="col-xs1-8 text_center text_400">
+					<p className="col-xs1-8 text_center text_400 color_secondary">
 						We welcome your inquiries and collaboration opportunities to elevate our
 						fragrance journey together.
 					</p>

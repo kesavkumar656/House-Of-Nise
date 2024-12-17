@@ -33,7 +33,7 @@ export default function HomeMemoirOfExperiences() {
 								A memoir of experiences, waiting to
 								<span className="color_black"> unfold</span>
 							</h1>
-							<p className=" font_secondary text_reg ">
+							<p className=" font_secondary text_reg color_secondary">
 								Each note is a distinct memory, lingering like footsteps across distant
 								lands. House of Nisé is more than just fragrance, it’s an odyssey. Every
 								scent takes you to a new experience of the world, enveloping you in
@@ -45,18 +45,19 @@ export default function HomeMemoirOfExperiences() {
 								</Button>
 							</div>
 						</div>
-
-						<Image src={building} alt=""></Image>
+						<div className={styles.ImgDiv}>
+							<Image src={building} alt=""></Image>
+						</div>
 					</div>
 					<div className={styles.MarqueeWrapper}>
 						<Marquee>
 							<div className={styles.MarqueeDiv}>
 								<div className={styles.marqueeContainer}>
-									<Image src={icon1}></Image>
+									<Image src={icon1} alt=""></Image>
 									<p className="col-xs-6">Long-lasting fragrance</p>
 								</div>
 								<div className={styles.marqueeContainer}>
-									<Image src={icon2}></Image>
+									<Image src={icon2} alt=""></Image>
 									<p className="col-xs-6">Gender-neutral scents</p>
 								</div>
 								<div className={styles.marqueeContainer}>

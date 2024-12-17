@@ -10,8 +10,10 @@
 		@extend %f_c_aj_center;
 		gap: 30px;
 		@include sm-down {
-			width: 100%;
+			width: 90%;
 			gap: 20px;
+			padding-top: 10%;
+			padding-bottom: 20%;
 		}
 	}
 	.B_left {

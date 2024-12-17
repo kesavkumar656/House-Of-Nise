@@ -26,6 +26,11 @@
 				margin-top: 3%;
 			}
 		}
+		.ImgDiv{
+			@include sm-down{
+				margin-top: -50px;
+			}
+		}
 	}
 	.MarqueeWrapper {
 		padding: 1.5% 0;

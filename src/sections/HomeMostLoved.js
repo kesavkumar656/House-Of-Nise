@@ -34,7 +34,9 @@ export default function HomeMostLoved() {
 		<section className={`${styles.HomeMostLoved} section_spacing`}>
 			<div className="container-fluid">
 				<h1 className="text_2xl text_400 font_primary">Our most loved</h1>
-				<p className={`${styles.para} text_reg text_400 font_primary`}>
+				<p
+					className={`${styles.para} text_reg text_400 font_primary color_secondary`}
+				>
 					Explore our bestselling fragrances and pick a sensory voyage that suits you
 					best.
 				</p>
