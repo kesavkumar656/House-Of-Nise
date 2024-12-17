@@ -21,112 +21,41 @@ export default function HomeExploreRich() {
 
 	useEffect(() => {
 		const ctx = gsap.context(() => {
-			const perfume1 = "#perfume1";
-			const perfume2 = "#perfume2";
-			const perfume3 = "#perfume3";
 			const mainDiv = "#MainDiv";
 			const imageDiv = "#ImageDiv";
+			const perfumes = gsap.utils.toArray(".perfumeDiv");
 
-			// Pin and Scroll animation for the main text and wrapper
-			// gsap.fromTo(
-			// 	mainDiv,
-			// 	{ x: 0 },
-			// 	{
-			// 		x: "-39%",
-			// 		opacity: 1,
-			// 		duration: 12,
+			// Move the entire section to the left
+			gsap.to(mainDiv, {
+				x: "-50vw", // Move it left by 50vw
+				ease: "none",
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: "top top",
+					end: "bottom top",
+					scrub: true,
+					pin: true,
+				},
+			});
 
-			// 		ease: "power1.out",
-			// 		scrollTrigger: {
-			// 			trigger: containerRef.current,
-			// 			start: "top 50%",
-			// 			end: "top 20%",
-			// 			toggleActions: "play none none reverse",
-			// 			markers: false,
-			// 		},
-			// 	}
-			// );
-
-			// Image container scrolling effect
-			gsap.fromTo(
-				imageDiv,
-				{ x: 200 },
-				{
-					x: 0,
-
-					opacity: 1,
-
-					y: 0,
-					stagger: 0.3,
-					duration: 1.5,
-					scrollTrigger: {
-						trigger: imageDiv,
-						start: "top 50%",
-						end: "+=200",
-						toggleActions: "play none none reverse",
-						markers: true,
-					},
-				}
-			);
-
-			// Individual perfume animations
-			gsap.fromTo(
-				perfume1,
-				{ x: 200 },
-				{
-					x: 0,
-
-					opacity: 1,
-					duration: 3,
-					ease: "power1.out",
-					scrollTrigger: {
-						trigger: perfume1,
-						start: "top 50%",
-						end: "+=200",
-						toggleActions: "play none none reverse",
-						markers: true,
-					},
-				}
-			);
-
-			gsap.fromTo(
-				perfume2,
-				{ x: 200 },
-				{
-					x: 0,
-
-					opacity: 1,
-					duration: 3,
-					ease: "power1.out",
-					scrollTrigger: {
-						trigger: perfume2,
-						start: "top 50%",
-						end: "+=200",
-						toggleActions: "play none none reverse",
-						markers: true,
-					},
-				}
-			);
-
-			gsap.fromTo(
-				perfume3,
-				{ x: 200 },
-				{
-					width: "100%",
-
-					x: 0,
-					opacity: 1,
-					duration: 3,
-					ease: "power1.out",
-					scrollTrigger: {
-						trigger: perfume3,
-						start: "top 50%",
-						end: "+=200",
-						toggleActions: "play none none reverse",
-						markers: true,
-					},
-				}
-			);
+			// Animate each image div: increase width and move left
+			perfumes.forEach((perfume, index) => {
+				gsap.fromTo(
+					perfume,
+					{ width: "20%", x: 0 },
+					{
+						width: "40%", // Double the width
+						x: -100 * index, // Move left proportionally for each image
+						ease: "power1.out",
+						scrollTrigger: {
+							trigger: containerRef.current,
+							start: "top top",
+							end: "bottom top",
+							scrub: true,
+						},
+					}
+				);
+			});
 		}, containerRef);
 
 		return () => ctx.revert();
@@ -147,7 +76,7 @@ export default function HomeExploreRich() {
 				</div>
 				<div className={styles.imageDiv} id="ImageDiv">
 					<div id="perfume1" className={`${styles.perfumeDiv} bg_primary`}>
-						<Image src={perfume1} alt="Perfume 1" />
+						<Image className="next_cover_image" src={perfume1} alt="Perfume 1" />
 						<h1>Collection</h1>
 					</div>
 					<div id="perfume2" className={`${styles.perfumeDiv} bg_secondary_tint`}>

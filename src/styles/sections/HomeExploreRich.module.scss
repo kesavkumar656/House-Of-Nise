@@ -2,37 +2,51 @@
 
 .HomeExploreRich {
 	overflow: hidden;
-	padding-left: var(--container_left_space);
 	margin-bottom: 8%;
+
 	.wrapper {
-		// @extend %f_r_a_center;
-		width: 150vw;
-		height: auto;
-		@extend %f_r_a_center;
+		display: flex;
+		align-items: center;
 		justify-content: space-between;
+		width: 400vw; 
+		height: auto;
+
 		@include sm-down {
 			flex-direction: column;
 		}
+
 		.textDiv {
-			width: 30%;
+			width: 50vw;
+			margin-right: 5%;
+
 			@include sm-down {
-				width: 90%;
-			}
-			.heading {
-				margin-bottom: 4%;
-				width: 80%;
-			}
-		}
-		.imageDiv {
-			width: 50%;
-			// @extend %f_r_a_center;
-			display: flex;
-			@include sm-down {
-				width: var(--container);
+				width: 90vw;
 			}
 
+			.heading {
+				margin-bottom: 4%;
+			}
+		}
+
+		.imageDiv {
+			width: 100%;
+			display: flex;
+			gap: 2vw;
+			overflow: hidden;
+
 			.perfumeDiv {
+				flex: 0 0 20%; // Start with a smaller width
 				padding: 50px 0;
+				background: var(--bg_secondary);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.3s ease;
+
+				img {
+					object-fit: cover;
+				}
 			}
 		}
 	}
