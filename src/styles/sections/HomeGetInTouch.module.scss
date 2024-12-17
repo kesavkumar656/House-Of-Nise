@@ -6,7 +6,7 @@
 	.wrapper {
 		margin: 0% auto;
 		width: 50%;
-		// padding: 5% 0;
+		padding: 5% 0% 10% 0%;
 		@extend %f_c_aj_center;
 		gap: 30px;
 		@include sm-down {
