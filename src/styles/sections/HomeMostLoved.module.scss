@@ -15,6 +15,11 @@
 			padding: 5% 0;
 		}
 	}
+
+	:global(.swiper-wrapper) {
+		margin-bottom: 20px;
+	}
+
 	:global(.swiper-horizontal .swiper-pagination-progressbar) {
 		bottom: 0;
 		top: auto;

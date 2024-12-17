@@ -3,14 +3,14 @@
 .HomeFeaturedBlogs {
 	.wrapper {
 		@extend %f_c_a_center;
-
+gap: 20px;
 		.blogWrapper {
 			margin-top: 4%;
 			
 			width: 100%;
 			.mobileGrid {
 				display: grid;
-				gap: 20px;
+				gap: 30px;
 				grid-template-columns: 1fr; // One column for mobile
 			}
 		}

@@ -31,7 +31,7 @@ export default function HomeMostLoved() {
 	}, []);
 
 	return (
-		<section className={`${styles.HomeMostLoved}`}>
+		<section className={`${styles.HomeMostLoved} section_spacing`}>
 			<div className="container-fluid">
 				<h1 className="text_2xl text_400 font_primary">Our most loved</h1>
 				<p className={`${styles.para} text_reg text_400 font_primary`}>

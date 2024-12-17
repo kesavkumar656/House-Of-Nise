@@ -5,13 +5,16 @@
 	padding-left: var(--container_left_space);
 	margin-bottom: 8%;
 	.wrapper {
+		// @extend %f_r_a_center;
+		width: 150vw;
+		height: auto;
 		@extend %f_r_a_center;
 		justify-content: space-between;
 		@include sm-down {
 			flex-direction: column;
 		}
 		.textDiv {
-			width: 40%;
+			width: 30%;
 			@include sm-down {
 				width: 90%;
 			}
@@ -22,21 +25,15 @@
 		}
 		.imageDiv {
 			width: 50%;
-			@extend %f_r_a_center;
+			// @extend %f_r_a_center;
+			display: flex;
 			@include sm-down {
 				width: var(--container);
 			}
 
 			.perfumeDiv {
-				padding: 30% 0;
-			
+				padding: 50px 0;
 			}
-			// div:nth-child(2) {
-			// 	width: 30%;
-			// }
-			// div:nth-child(3) {
-			// 	width: 10%;
-			// }
 		}
 	}
 }
