@@ -3,14 +3,15 @@
 .HomeMemoirOfExperiences {
 	.wrapper {
 		@extend %d_flex;
-		align-items: flex-end;
+		align-items: center;
+		justify-content: space-between;
 		padding-left: var(--container_left_space);
 		@include sm-down {
 			flex-direction: column;
 			align-items: center;
 		}
 		.textDiv {
-			width: 50%;
+			width: 45%;
 			@include sm-down {
 				width: 90%;
 			}
@@ -38,7 +39,7 @@
 			gap: 20px;
 			.marqueeContainer {
 				@extend %f_r_a_center;
-				gap: 20px;
+				gap: 8%;
 				padding: 0 20px;
 				width: 30%;
 			}

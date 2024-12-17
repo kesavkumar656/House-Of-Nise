@@ -93,7 +93,7 @@ export default function HomeFindAStore() {
 			<div className={styles.MarqueeWrapper}>
 				<Marquee>
 					<div className={styles.MarqueeDiv}>
-						<h1 className="col-xs-4 font_primary text_200 text_uppercase">
+						<h1 className="col-xs-4 font_primary text_reg text_center text_200 text_uppercase">
 							Feature In
 						</h1>
 						<div className={styles.marqueeContainer}>

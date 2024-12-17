@@ -25,32 +25,30 @@ export default function HomeExploreRich() {
 			const imageDiv = "#ImageDiv";
 			const perfumes = gsap.utils.toArray(".perfumeDiv");
 
-			// Move the entire section to the left
 			gsap.to(mainDiv, {
-				x: "-50vw", // Move it left by 50vw
+				x: "-170vw",
 				ease: "none",
 				scrollTrigger: {
 					trigger: containerRef.current,
-					start: "top top",
+					start: "top 5%",
 					end: "bottom top",
 					scrub: true,
 					pin: true,
 				},
 			});
 
-			// Animate each image div: increase width and move left
 			perfumes.forEach((perfume, index) => {
 				gsap.fromTo(
 					perfume,
 					{ width: "20%", x: 0 },
 					{
-						width: "40%", // Double the width
-						x: -100 * index, // Move left proportionally for each image
+						width: "40%",
+						x: -100 * index,
 						ease: "power1.out",
 						scrollTrigger: {
 							trigger: containerRef.current,
 							start: "top top",
-							end: "bottom top",
+							end: "bottom bottom",
 							scrub: true,
 						},
 					}
@@ -62,7 +60,7 @@ export default function HomeExploreRich() {
 	}, []);
 
 	return (
-		<section ref={containerRef} className={styles.HomeExploreRich}>
+		<section ref={containerRef} className={`${styles.HomeExploreRich} no_marg `}>
 			<div className={styles.wrapper} id="MainDiv">
 				<div className={styles.textDiv}>
 					<div className={`${styles.heading} text_2xl font_primary text_400`}>

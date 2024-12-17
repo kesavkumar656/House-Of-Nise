@@ -5,10 +5,11 @@
 	margin-bottom: 8%;
 
 	.wrapper {
+		padding-left: 5%;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		width: 400vw; 
+		// justify-content: space-between;
+		width: 400vw;
 		height: auto;
 
 		@include sm-down {
@@ -16,7 +17,7 @@
 		}
 
 		.textDiv {
-			width: 50vw;
+			width: 30vw;
 			margin-right: 5%;
 
 			@include sm-down {
@@ -29,23 +30,22 @@
 		}
 
 		.imageDiv {
-			width: 100%;
+			// width: 100%;
 			display: flex;
 			gap: 2vw;
 			overflow: hidden;
 
 			.perfumeDiv {
-				flex: 0 0 20%; // Start with a smaller width
+				flex: 0 0 20%;
 				padding: 50px 0;
-				background: var(--bg_secondary);
+				background: var(--color_primary);
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				transition: all 0.3s ease;
-
+				transition: all 1s ease;
 				img {
-					object-fit: cover;
+					object-fit: fill;
 				}
 			}
 		}
